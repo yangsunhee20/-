@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage3_small.html</title>
+    <!-- <link rel="stylesheet" href="./mainpage.css"> -->
+    <link rel="stylesheet" href="./mainpage3_small.css">
+    <script src="mainpage3.js"></script>
+
+</head>
+<body>
+    <!-- <div class="back"> -->
+    <div class="container">
+        <div class="head">
+            <h1 class="title"><a href="mainpage3_small.html">데이터자격검정</a></h1>
+            <ul class="headmenu">
+                <!-- 1단계 -->
+                <li><a href="#">자격안내</a>
+                    <ul class="A">
+                        <!-- 2단계 -->
+                        <li><a href="#">빅데이터분석기사</a></li>
+                        <li><a href="#">데이터분석</a></li>
+                    <li><a href="#">SQL</a></li>
+                    </ul>
+                </li>
+                <!-- 1단계 -->
+                <li><a href="#">시험접수</a>
+                    <ul class="B">
+                        <!-- 2단계 -->
+                        <li><a href="#">접수안내</a></li>
+                        <li><a href="#">시험일정</a></li>
+                        <li><a href="#">접수신청</a></li>
+                    </ul>
+                </li>
+                <!-- 1단계 -->
+                <li><a href="#">시험결과</a>
+                    <ul class="c">
+                        <!-- 2단계 -->
+                        <li><a href="#">결과확인</a></li>
+                        <li><a href="#">재검토신청</a></li>
+                    </ul>
+                </li>
+                <!-- 1단계 -->
+                <li><a href="#">고객지원</a>
+                    <ul class="d">
+                        <!-- 2단계 -->
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+                <!-- 1단계 -->
+                <li><a href="#">마이페이지</a>
+                    <ul class="f">
+                        <!-- 2단계 -->
+                        <li><a href="#">접수조회</a></li>
+                        <li><a href="#">결과확인</a></li>
+                        <li><a href="#">자격증관리</a></li>
+                        <li><a href="#">보수교육</a></li>
+                        <li><a href="#">회원정보관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="content">
+
+            <section class="choice">
+                <ul>
+                    <li><a href="#"><img class="checklist" src="../image/schedule_.png" alt=""><br>시험 일정</a></img></li>
+                    <li><a href="#"><img class="notes" src="../image/notes.png" alt=""><br>시험접수</a></img></li>
+                    <li><a href="#"><img class="checklist" src="../image/checklist.png" alt=""><br>결과확인</a></img></li>
+                    <li><a href="#"><img class="notes" src="../image/certificate.png" alt=""><br>자격증 발급</a></img></li>
+                    <li><a href="#"><img class="list" src="../image/analysis.png" alt=""><br>응시자 유의사항</a></img></li>
+                </ul>
+            </section>
+
+            <section class="middle">
+
+
+                <nav class="calender">
+                    <h2>2024년 2월</h2>
+                        <table class="realcalender">
+                            <tr>
+                                <th>일요일</th>
+                                <th>화요일</th>
+                                <th>수요일</th>
+                                <th>목요일</th>
+                                <th>금요일</th>
+                                <th>토요일</th>
+                                <th>월요일</th>
+                            </tr>
+                            <tr>
+                                <td class="not2">28</td>
+                                <td class="not2">29</td>
+                                <td class="not2">30</td>
+                                <td class="not2">31</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td class="not2">1</td>
+                                <td class="not2">2</td>
+                            </tr>
+                            <tr>
+                                <td class="not2">3</td>
+                                <td class="not2">4</td>
+                                <td class="not2">5</td>
+                                <td class="not2">6</td>
+                                <td class="not2">7</td>
+                                <td class="not2">8</td>
+                                <td class="not2">9</td>
+                            </tr>
+                        </table>
+                </nav>
+
+                <nav class="detail">
+
+                    <form name="f">
+                        <div class="detailhead">
+                            <input type="button" name="receiptH" value="접수" onclick="turnr()">
+                            <input type="button" name="testH" value="시험" onclick="turnt()">
+                            <input type="button" name="priorH" value="사전접수 발표" onclick="turnp()">
+                            <input type="button" name="noticeH" value="결과발표" onclick="turnn()">
+                        </div>
+                    </form>
+
+                    <ul class="receipt" id="receipt" >
+                        <li>
+                            <h3>SQLP</h3>
+                            <h4>제50회 SQL 전문가(SQLP)</h4> 
+                            <p>01.29(월) 10:00 ~ 02.02(금) 18:00</p>
+                        </li>
+                        <li>
+                            <h3>SQLD</h3>
+                            <h4>제52회 SQL 개발자(SQLD)</h4>
+                            <p>01.29(월) 10:00 ~ 02.02(금) 18:00</p>
+                        </li>
+                        <li>
+                            <h3>DAP</h3>
+                            <h4>제61회 데이터아키텍처 전문가(DAP)</h4>
+                            <p>02.12(월) 10:00 ~ 02.16(금) 18:00</p>
+                        </li>
+                        <li>
+                            <h3>DAsP</h3>
+                            <h4>제56회 데이터아키텍처 준전문가(DAsP)</h4>
+                            <p>02.12(월) 10:00 ~ 02.16(금) 18:00</p>
+                        </li>                    
+                    </ul>
+
+                    <ul class="test" id="test">   
+                        <li>
+                            <h3>ADP</h3>
+                            <h4>제32회 데이터분석 전문가(ADP)-필기</h4>
+                            <p>02.24(토) 10:00</p>                            
+                        </li>
+                        <li>
+                            <h3>ADsP</h3>
+                            <h4>제40회 데이터분석 준전문가(ADsP)</h4>
+                            <p>02.24(토) 10:00</p>
+                        </li>
+                        <li>
+                            <h3>SQLP</h3>
+                            <h4>제50회 SQL 전문가(SQLP)</h4>
+                            <p>03.09(토) 10:00</p>
+                            </li>
+                        <li>
+                            <h3>SQLD</h3>
+                            <h4>제52회 SQL 개발자(SQLD)</h4>
+                            <p>03.09(토) 10:00</p>
+                        </li>
+                    </ul>
+
+                    <ul class="prior" id="prior">
+                        <li>
+                            <h3>ADP</h3>
+                            <h4>제32회 데이터분석 전문가(ADP)-필기</h4>
+                            <p>03.15(금) 16:00</p>
+                        </li>
+                        <li>
+                            <h3>ADsP</h3>
+                            <h4>제40회 데이터분석 준전문가(ADsP)</h4>
+                            <p> 03.15(금) 16:00</p> 
+                        </li>
+                    </ul>
+
+                    <ul class="result" id="result">
+                        <li>일정이 존재하지 않습니다.</li>                
+                    </ul>
+                    
+                
+                </nav>
+            </section>
+
+            <section class="middle2">
+                <nav class="notice">
+
+                    <table>
+                        <tr class="noticeTitle">
+                            <td colspan="2">
+                            <a href="#">공지사항</a>
+                            <a href="#">자료실</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">제40회 데이터분석 준전문가(ADsP) 광주 고사장 추가 안내</a></td>
+                            <td class="date">2024.02.04</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">2023년 데이터자격검정 응시자 대상 만족도 설문조사 경품 추첨 결과</a></td>
+                            <td class="date">2024.02.05</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">2023년 데이터자격검정 응시자 대상 만족도 설문조사 안내</a></td>
+                            <td class="date">2024.02.06</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">데이터자격검정 고객센터 재정비 안내</a></td>
+                            <td class="date">2024.02.07</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">2024년도 데이터자격검정 시행 공고(2024.01.04. 일부 수정)</a></td>
+                            <td class="date">2024.02.08</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">제7회 빅데이터분석기사 실기 자격검정 안내(기타 사항 변경)</a>
+                                <td class="date">2023.11.23</td>
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
+    
+                <nav class="etc">
+                    <table>
+                        <tr>
+                                <td class="icon" ><img src="../image/id-card.png"></td>
+                                <td>
+                                    <h3><a href="#">진위여부</a></h3>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="icon"><img src="../image/refund.png" ></td>
+                                <td>
+                                    <h3><a href="#">환불안내</a></h3>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="icon"><img src="../image/seminar.png"></td>
+                                <td>
+                                    <h3><a href="#">보수교육</a></h3>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="icon"><img src="../image/business-man.png"></td>
+                                <td>
+                                    <h3><a href="#">위원신청</a></h3>
+                                </td>
+                        </tr>
+                    </table>
+                </nav>
+            </section>
+            
+        </div>
+        
+
+        <div class="footer">
+            <ul>
+                <li>개인정보처리방침</li>
+                <li>|</li>
+                <li>이용약관</li>
+                <li>|</li>
+                <li>이메일무단수집거부</li>
+            </ul>
+
+            <ul>
+                <li><a href="https://kr.freepik.com/icon/notes_11149978#fromView=search&track=sph&page=1&position=86&uuid=6adb5ba5-fcee-4349-b40f-31832ccd6543" target="_blank">juicy_fish 제작 아이콘</a></li>
+                <li><a href="https://kr.freepik.com/search?format=search&last_filter=page&last_value=2&page=2&shape=hand-drawn&type=icon#uuid=81b0dce2-9de9-47df-bfca-6ce1b11b1ed5">Illosalz 제작 아이콘</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+    <!-- </div> -->
+</body>
+</html>

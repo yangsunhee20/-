@@ -1,0 +1,331 @@
+/* 
+작성자: 양선희
+작성날짜: 2024-02-02 ~
+작성목적: 메인페이지 프로젝트 pc 스타일시트
+*/
+
+*{  margin: 0;
+    padding: 0;
+    font-family: 나눔고딕;
+}
+
+ul{list-style: none;}  /*마크*/
+a{text-decoration: none;} /*밑줄*/
+
+/* 메인페이지 일괄 */
+div.container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+/* .back{
+    height: 330px;
+    background-color: orange;
+} */
+
+/* 로고 */
+.title{
+    position: relative;
+    float: left;
+    margin: 0 10px 0 10px;
+    line-height: 100px;
+}
+.title a{
+    color: black;
+}
+
+/* 로고 포함 상단메뉴 */
+div.head{
+    width: 1200px;
+    height: 100px;
+    background-color: orange;
+}
+
+
+/* 상단메뉴 */
+.headmenu>li{
+    position: relative;
+    /* background-color: orange; */
+    float: left;
+    font-size: 20px;
+    width: 191px;
+}
+
+/* 상단메뉴 마우스 두면 색깔바뀜 */
+.headmenu > li:hover{
+    background-color: white;
+    color: black;
+}
+
+/* 상단메뉴 글꼴및 색깔 */
+.headmenu li a{
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    display: block;
+}
+
+/* 서브메뉴 */
+.headmenu ul {
+    position: absolute;
+    top: -9999px;
+    background-color: white;
+    z-index: 99;
+    width: 100%;
+}
+
+/* 상단메뉴에 마우스 두면 서브메뉴 나옴 */
+.headmenu > li:hover > ul{
+    position: absolute;
+    top: 100px;
+}
+
+/* 서브메뉴에 마우스 올리면 배경색 변경 */
+.headmenu ul a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.headmenu ul a{
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+hr{
+    border: 0.5px solid darkgoldenrod;
+}
+
+/* 선택항목 이미지 크기 */
+.choice img{
+    width: 100px;
+    /* border: 2px solid black; */
+}
+
+/* 선택항목 이미지 배치 및 배경 색깔 */
+.choice a{
+    position: relative;
+    float: left;
+    /* border: 2px solid black; */
+    padding: 30px ;
+    margin: 30px;
+    background-color: orangered;
+    left: 45px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* 선택항목 근처에 가면 색깔 바뀌기 */
+.choice a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* 선택항목 뒷배경 */
+.choice{
+    background-color: orange;
+    /* border: 1px solid black; */
+    height: 230px;
+}
+
+/* 중간 배경색 */
+.middle{
+    background-color: brown;
+    /* border: 2px solid black; */
+    height: 550px;
+}
+
+/* 일정표 바깥 */
+.calender{
+    top: 40px;
+    height: 450px;
+    width: 650px;
+    /* border: 2px solid black; */
+    position: relative;
+    float: left;
+    left: 30px;
+    background-color: white;
+}
+
+/* 2024년 2월 */
+.calender h2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* 일정표 */
+.realcalender{
+    height: 350px;
+    width: 590px;
+    /* border: 2px solid black; */
+    margin: 25px 30px 25px 30px;
+    border-collapse: collapse;
+}
+
+.realcalender th{
+    border: 1px solid darkgray;
+    /* border-collapse: collapse; */
+}
+
+/* 날짜 */
+.realcalender td{
+    text-align: end;
+    border: 1px solid darkgray;
+    
+}
+.not2{
+    color:darkgray;
+}
+
+/* 상세 일정표 */
+
+.detail{
+    top: 40px;
+    width: 450px;
+    height: 400px;
+    /* border: 2px solid black; */
+    position: relative;
+    float: right;
+    right: 30px;
+    background-color: bisque;
+}
+
+.detailhead{
+    background-color: bisque;
+    height: 50px;
+}
+
+/* 상세일정표 제목 */
+.detail input{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: bisque;
+
+}
+
+.detail input:hover{
+    color: red;
+}
+
+/* 상세일정표 본문 */
+
+.detail ul{
+    position: absolute;
+    top: 40px;
+    height: 400px;
+    width: 450px;
+    background-color: bisque; /*뒤에 안보이게.*/
+}
+
+.detail ul li{
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 5px;
+}
+
+.detail ul li p{
+    color: gray;
+}
+
+.receipt{
+    z-index: 2;
+}
+
+/* 왜... result는 안했는데 되는거지 */
+.prior{
+    height: 400px;
+}
+
+
+/* 공지사항, 자료실 */
+
+.middle2{
+    background-color: rgb(255, 187, 0);
+    height: 350px;
+}
+.notice{
+    position: relative;
+    float: left;
+    color: black;
+    margin: 20px;
+    background-color: white;
+}
+
+/* 공지사항 제목 및 내용 */
+.notice table{
+    /* border: 1px solid black; */
+    width: 700px;
+    position: relative;
+    float: left;
+}
+.noticeTitle{
+    font-size: 27px;
+    font-weight: bold;
+}
+.notice td{
+    padding: 9px;
+}
+.notice a{
+    color: black;
+}
+
+
+.date{
+    position: relative;
+    float: right;
+}
+
+/* 기타 */
+
+.etc table{
+    width: 430px;
+    border-collapse: collapse;
+    background-color: white;
+    position: relative;
+    float: left;
+    /* border: 2px solid black; */
+    margin: 20px 20px 20px 0;
+}
+
+.etc a{
+    padding: 24px 262px 23px 0 ;
+    color: black;
+    z-index: 1;
+}
+
+.etc tr:hover{
+    background-color: rgb(178, 178, 236);
+}
+
+.icon img{
+    width: 60px;
+    height: 60px;
+    z-index: 0;
+}
+
+.icon{
+    width: 70px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* 하단 */
+div .footer ul{
+    background-color: gray;
+    width: 1200px;
+    height: 40px;
+}
+
+
+div .footer li{
+    /* margin: 20px; */
+    float: left;
+    padding: 10px;
+    color: white;
+}
